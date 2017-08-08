@@ -21,6 +21,63 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+
+var appData = require('../data.json');
+
+var apiRoutes = express.Router();
+
+apiRoutes.get('/all',function (req,res) {
+  res.json({
+    errno:0,
+    data:appData
+  });
+});
+
+apiRoutes.get('/vue',function (req,res) {
+  res.json({
+    errno:0,
+    data:appData
+  });
+});
+
+apiRoutes.get('/react',function (req,res) {
+  res.json({
+    errno:0,
+    data:appData
+  });
+});
+
+apiRoutes.get('/angular',function (req,res) {
+  res.json({
+    errno:0,
+    data:appData
+  });
+});
+
+apiRoutes.get('/nodejs',function (req,res) {
+  res.json({
+    errno:0,
+    data:appData
+  });
+});
+
+apiRoutes.get('/app',function (req,res) {
+  res.json({
+    errno:0,
+    data:appData
+  });
+});
+
+apiRoutes.get('/other',function (req,res) {
+  res.json({
+    errno:0,
+    data:appData
+  });
+});
+
+app.use('/api',apiRoutes)
+
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

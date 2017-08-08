@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueResource from 'vue-resource'; //引入Vue-Resource
+
+Vue.use(VueResource);//全局注册VueResource
 
 Vue.config.productionTip = false
 
