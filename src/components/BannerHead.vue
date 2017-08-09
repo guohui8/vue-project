@@ -9,8 +9,7 @@
                 <!--firstNav.intro-->
             <!--</p>-->
         <!--</div>-->
-      <div id="blockhide" v-for="nav in dataContent.navs" :class="(nav.routerUrl==curRoutePath)?'active':''" >
-          <span>{{nav.routerUrl==curRoutePath}}</span>
+      <div v-for="nav in dataContent.navs" :class="(nav.routerUrl==curRoutePath)?'active':''" >
           <h2 class='tit'>{{nav.introTitle}}</h2>
           <p class='intro'>{{nav.intro}}</p>
       </div>
@@ -48,7 +47,7 @@
 
 <script type="text/ecmascript-6">
 var curRoutePath;
-var firstNavPath;
+
   export default {
     props: ['dataContent'],
     data() {
@@ -60,8 +59,7 @@ var firstNavPath;
         };
     },
     created(){
-        this.firstNavPath =this.$route.path.startsWith("/all");
-        console.log(firstNavPath)
+
 
     },
     mounted() {
