@@ -201,7 +201,7 @@
       "navIcon": "all",
       "navText": "All",
       "introTitle": "前端编程之路",
-      "intro": "个人业余在 Github 上开发的部分项目/DEMO，擅长于JavaScript、熟悉Node.js、掌握Java"
+      "intro": "个人业余在 Github 上开发的部分项目/DEMO，掌握HTML/CSS/JavaScript、熟悉Java、Node.js"
     },
     {
       "routerUrl": "/vue",

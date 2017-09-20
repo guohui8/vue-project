@@ -88,7 +88,7 @@ body {
   height: 848px;
   left: 0;
   top: 0;
-  background: url(../img/block.png);
+  background: url(../../../static/img/block.png);
   z-index: 2;
 }
 .svg-diamond {
@@ -97,7 +97,7 @@ body {
   height: 1213px;
   left: 215px;
   top: 190px;
-  background: url(../img/diamond.png);
+  background: url(../../../static/img/diamond.png);
   z-index: 3;
 }
 .svg-leaf {
@@ -106,7 +106,7 @@ body {
   height: 930px;
   left: 1060px;
   top: 450px;
-  background: url(../img/leaf.png);
+  background: url(../../../static/img/leaf.png);
   z-index: 2;
 }
 .svg-small-circle {
@@ -115,7 +115,7 @@ body {
   height: 864px;
   right: 478px;
   top: 336px;
-  background: url(../img/small-circle.png);
+  background: url(../../../static/img/small-circle.png);
   z-index: 0;
 }
 .svg-big-circle {
@@ -124,7 +124,7 @@ body {
   height: 1664px;
   right: 811px;
   top: 956px;
-  background: url(../img/big-circle.png);
+  background: url(../../../static/img/big-circle.png);
   z-index: 0;
 }
 .svg-triangle {
@@ -133,7 +133,7 @@ body {
   height: 1184px;
   right: 0px;
   bottom: 445px;
-  background: url(../img/triangle.png);
+  background: url(../../../static/img/triangle.png);
   z-index: 1;
 }
 /* banner end*/
@@ -227,7 +227,7 @@ body {
   margin-bottom: 8px;
   transition: .1s all linear;
   margin-top: 0;
-  background-image: url(../img/nav.png);
+  background-image: url(../../../static/img/nav.png);
   background-size: cover;
 }
 .program-banner .navitem .navicon.all {
@@ -316,40 +316,40 @@ body {
   transform: scale(1.2);
 }
 #repo-bg-1 {
-  background-image: url(../img/1.jpg);
+  background-image: url(../../../static/img/1.jpg);
 }
 #repo-bg-2 {
-  background-image: url(../img/2.jpg);
+  background-image: url(../../../static/img/2.jpg);
 }
 #repo-bg-3 {
-  background-image: url(../img/3.jpg);
+  background-image: url(../../../static/img/3.jpg);
 }
 #repo-bg-4 {
-  background-image: url(../img/4.jpg);
+  background-image: url(../../../static/img/4.jpg);
 }
 #repo-bg-5 {
-  background-image: url(../img/5.jpg);
+  background-image: url(../../../static/img/5.jpg);
 }
 #repo-bg-6 {
-  background-image: url(../img/6.jpg);
+  background-image: url(../../../static/img/6.jpg);
 }
 #repo-bg-7 {
-  background-image: url(../img/7.jpg);
+  background-image: url(../../../static/img/7.jpg);
 }
 #repo-bg-8 {
-  background-image: url(../img/8.jpg);
+  background-image: url(../../../static/img/8.jpg);
 }
 #repo-bg-9 {
-  background-image: url(../img/9.jpg);
+  background-image: url(../../../static/img/9.jpg);
 }
 #repo-bg-10 {
-  background-image: url(../img/10.jpg);
+  background-image: url(../../../static/img/10.jpg);
 }
 #repo-bg-11 {
-  background-image: url(../img/11.jpg);
+  background-image: url(../../../static/img/11.jpg);
 }
 /*#repo-bg-12 {
-  background-image: url(../img/12.jpg);
+  background-image: url(../../../static/img/12.jpg);
 }*/
 
 .program-item .shadow {

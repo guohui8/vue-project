@@ -9,14 +9,14 @@
     </div>
   </div>
   <div class="elevator">
-    <a href="https://github.com/giscafer" class="elevator-faq" target="_blank">
+    <a href="https://github.com/guohui8" class="elevator-faq" target="_blank">
       <span class="">GitHub</span>
     </a>
-    <a href="http://giscafer.com" class="elevator-msg" target="_blank">
+    <a href="http://blog.guohui6.com/" class="elevator-msg" target="_blank">
       <span class="">博客</span>
     </a>
-    <a href="http://weibo.com/laohoubin" target="_blank" class="elevator-app">
-      <span class="">微博</span>
+    <a href="http://www.guohui6.com/resume/" target="_blank" class="elevator-app">
+      <span class="">简历</span>
       <div class="elevator-app-box"></div>
     </a>
      <!--<a href="javascript:void(0)" class="elevator-top no-goto"  id="backTop">-->
@@ -40,17 +40,15 @@
       };
     },
     created() {
-
-      this.$http.get('/api/all').then((response) => {
+    this.$http.get('http://www.guohui6.com/vueproject/test.php').then((response) => {
+      // this.$http.get('http://www.biancheng.com/test.php').then((response) => {
         response = response.body;
         if (response.errno === ERR_OK) {
           this.dataContent = Object.assign({}, this.dataContent, response.data);
-          //console.log( this.dataContent);
+          console.log( this.dataContent);
           //console.log($router.path)
           this.newContent = Object.assign({}, this.dataContent, response.data);
           this.changeData()
-
-
         }
       });
     },
@@ -66,14 +64,16 @@
         var type = this.$route.path.substr(1);
         console.log("已经进入到changeData--"+type);
         this.dataContent.project = this.filterPro(type);
-//        console.log(this.dataContent.project)
+        console.log(this.dataContent.project)
 
       },
       filterPro:function(type){
         if(!type){
+
           return this.newContent.project;
         }
-        return this.newContent.project.filter(item => {
+         var  nProject =   this.newContent.project;
+        return nProject.filter(item => {
           return item.type.includes(type);
         })
       }

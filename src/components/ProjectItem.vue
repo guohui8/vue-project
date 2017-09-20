@@ -13,8 +13,8 @@
         <div class='program-list-dest'>{{item.meta}}</div>
 
         <div class='program-list-bot'>
-          <span class='text'><a  :href="item.demoUrl" target="_blank">在线演示</a></span>
-          <span class='git'><a  :href="item.gitUrl" target="_blank">Github</a></span>
+          <span class='text'><a  v-if="item.demoUrl" :href="item.demoUrl" target="_blank">在线演示</a></span>
+          <span class='git'><a  v-if="item.gitUrl" :href="item.gitUrl" target="_blank">Github</a></span>
         </div>
       </div>
     </div>

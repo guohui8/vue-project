@@ -1,6 +1,7 @@
 # vue-project
 
 > A Vue.js project
+> 展示个人作品集的SPA应用，vue版，模仿慕课网路径页面
 
 ## Build Setup
 
